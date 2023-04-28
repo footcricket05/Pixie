@@ -1,39 +1,59 @@
 # Python Voice Assistant
-## Required Libraries:
-* [weather-api](https://pypi.org/project/weather-api/)
-  - pip install weather-api
-* [SpeechRecognition](https://pypi.org/project/SpeechRecognition/)
-  - pip install SpeechRecognition
-* [bs4](https://pypi.org/project/bs4/)
-  - pip install bs4
-## Current Commands:
-* Tell the date:
-  - "What's the date" or "What is the date".
-* Tell the time:
-  - "What's the time" or "What is the time".
-* Play a YouTube video:
-  - "Play _NAME_ on YouTube" or "Search for _NAME_ on YouTube".
-* Open a Google search:
-  - "Search for _NAME_ online".
-* Find the current weather:
-  - "What's the weather", "What is the weather", "What's the weather like" or "What is the weather like".
-* Roll a die:
-  - "Roll a die" or "Roll a dice".
-* Flip a coin:
-  - "Flip a coin"
-* Take a screenshot:
-  - "Take a screenshot" or "Take a screenshot of my screen"
-* Extra commands:
-  - Make the Assistant talk about Fortnite...
-    - "Fortnite"
-  - Open the Voice Assistant repository.
-    - "Open your GitHub repository"
-## Things to do:
-- [ ] Finish off README.md
-- [X] Add date command
-- [X] Add weather command
-- [X] Add flip a coin command
-- [ ] Calendar stuff maybe?
-- [ ] Change TTS voice **OR** Change to Pytts
-- [X] Try to move cmds into a folder
-- [X] Add roll a die command
+This is a simple voice assistant built using Python that can perform a variety of tasks such as telling the time and date, searching Google, playing YouTube videos, finding the current weather, rolling a die, flipping a coin, and taking a screenshot.
+
+
+## Required Libraries
+The following libraries are required to run this program:
+
+1. `weather-api`
+
+2. `SpeechRecognition`
+
+3. `bs4`
+
+To install the libraries, use the following command:
+```
+pip install -r requirements.txt
+```
+
+
+## Current Commands
+The following commands are currently available:
+
+1. Tell the date
+
+2. Tell the time
+
+3. Play a YouTube video
+
+4. Open a Google search
+
+5. Find the current weather
+
+6. Roll a die
+
+7. Flip a coin
+
+8. Take a screenshot
+
+9. Extra commands
+
+
+## Things to do
+The following tasks are yet to be completed:
+
+1. Finish off README.md
+
+2. Calendar stuff maybe?
+
+3. Change TTS voice OR Change to Pytts
+
+
+## Usage
+To use the voice assistant, run python main.py in your terminal. Once the assistant starts, you can give it a command by speaking to it.
+
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+
