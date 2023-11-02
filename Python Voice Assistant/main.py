@@ -65,7 +65,7 @@ def userSpoke(speech):
             tts("Fortnite players are virgins, by the way fortnight dances are pretty cool!")
         #github repo
         elif speech == "open your github repository":
-            open("https://github.com/Josh1560/Python-Voice-Assistant")
+            open("https://github.com/footcricket05/PyVoice")
         elif speech == "take a screenshot" or speech == "take a screenshot of my screen":
             tts("Your screenshot was saved in your pictures folder")
             extract(os_based.Screenshot())
