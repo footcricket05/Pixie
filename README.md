@@ -69,7 +69,7 @@ Pixel Voice Assistant supports a variety of voice commands, including but not li
 - Searching Google 🔍
 - Looking up information on Wikipedia 📚
 - Opening specific websites (e.g., YouTube, Google, Gmail) 🌐
-- Playing music (customizable to your preferred music platform) 🎵
+- Playing music 🎵
 
 Feel free to extend the list of supported commands to suit your needs.
 
