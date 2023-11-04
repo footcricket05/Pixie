@@ -1,57 +1,82 @@
-# 🎙️ PyVoice: Your Python Voice Assistant
+# Pixel: Python Voice Assistant
 
-PyVoice is a simple voice assistant built using Python that can perform a variety of tasks to assist you in your daily activities. Whether you need to know the time and date, search Google, play YouTube videos, check the weather, roll a die, flip a coin, or take a screenshot, PyVoice has got you covered.
+Pixel Voice Assistant is a Python-based voice assistant that allows you to interact with your computer using voice commands. You can ask for the time, search the web, get information from Wikipedia, open websites, and more.
 
-## Getting Started 🚀
+## Table of Contents
+- [Getting Started](#getting-started)
+- [Dependencies](#dependencies)
+- [Features](#features)
+- [Usage](#usage)
+- [Commands](#commands)
+- [License](#license)
 
-To get started with PyVoice, you'll need to install some required libraries. Use the following command to install them:
+## Getting Started
 
-```
-pip install -r requirements.txt
-```
+To get started with Pixel Voice Assistant, follow the installation steps below:
 
-## Available Commands 📋
+### Prerequisites
 
-PyVoice offers the following set of commands:
+- Python 3.x
+- An active internet connection
+- A microphone (for voice input)
 
-1. Tell the current date 📅.
+### Installation
 
-2. Tell the current time ⏰.
+1. Clone or download this repository.
 
-3. Play a YouTube video ▶️.
+2. Install the required Python libraries using pip:
 
-4. Perform a Google search 🔍.
+   ```bash
+   pip install pyttsx3 speech_recognition wikipedia-api
+   ```
 
-5. Find the current weather 🌦️.
+3. Specify the path to your Microsoft Edge executable (msedge.exe) in the `msedge_path` variable inside the code.
 
-6. Roll a virtual die 🎲.
+4. Run the `PIXEL.py` script:
 
-7. Flip a virtual coin 💰.
+   ```bash
+   python PIXEL.py
+   ```
 
-8. Take a screenshot 📸.
+## Dependencies
 
-9. Additional commands (to be defined) ➕.
+- [pyttsx3](https://pypi.org/project/pyttsx3/): A text-to-speech conversion library.
+- [speech_recognition](https://pypi.org/project/SpeechRecognition/): Recognizes speech and converts it to text.
+- [wikipedia-api](https://pypi.org/project/Wikipedia-API/): Allows access to Wikipedia articles.
 
-## Usage 💡
+## Features
 
-To use PyVoice, simply run the following command in your terminal:
+- Time and date information
+- Web search using Google
+- Wikipedia search and summary retrieval
+- Opening websites (e.g., YouTube, Google, Gmail, WhatsApp)
+- Customized voice greetings
+- Text-to-speech response for user interactions
 
-```
-python main.py
-```
+## Usage
 
-Once PyVoice is up and running, you can give it a command by speaking to it. The assistant will process your request and provide you with the information you need.
+1. When you run the `PIXEL.py` script, Pixel Voice Assistant will greet you and wait for your voice commands.
 
-## To-Do List 📝
+2. You can issue commands or questions, and Pixel Voice Assistant will respond accordingly.
 
-There are a few tasks that are still in progress:
+3. To exit the assistant, simply say "exit" or "bye," and it will bid you farewell.
 
-1. Completing the README.md for better documentation 📚.
+## Commands
 
-2. Adding calendar-related functionalities (if needed) 🗓️.
+Pixel Voice Assistant supports a variety of voice commands, including but not limited to:
 
-3. Considering a change in the text-to-speech (TTS) voice or shifting to Pytts 🗣️.
+- Asking for the time and date.
+- Searching Google.
+- Looking up information on Wikipedia.
+- Opening specific websites (e.g., YouTube, Google, Gmail).
+- Playing music (customizable to your preferred music platform).
 
-## License 📜
+Feel free to extend the list of supported commands to suit your needs.
 
-This project is licensed under the `MIT License`. You are free to use, modify, and distribute the code as per the terms of the license. For more details, please refer to the LICENSE file in this repository.
+## License
+
+This project is licensed under the `MIT License` - see the [LICENSE](LICENSE) file for details.
+
+---
+
+Feel free to modify and enhance the Pixel Voice Assistant to make it even more powerful and tailored to your preferences. Enjoy using your personal voice assistant!
