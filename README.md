@@ -1,6 +1,6 @@
-# 🎙️ Pixel: Python Voice Assistant
+# 🎙️ Pixie: Python Voice Assistant
 
-Pixel Voice Assistant is a Python-based voice assistant that allows you to interact with your computer using voice commands. You can ask for the time, search the web, get information from Wikipedia, open websites, and more.
+Pixie Voice Assistant is a Python-based voice assistant that allows you to interact with your computer using voice commands. You can ask for the time, search the web, get information from Wikipedia, open websites, and more.
 
 ## Table of Contents
 - [Getting Started](#getting-started)
@@ -32,10 +32,10 @@ To get started with Pixel Voice Assistant, follow the installation steps below:
 
 3. Specify the path to your Microsoft Edge executable (msedge.exe) in the `msedge_path` variable inside the code.
 
-4. Run the `PIXEL.py` script:
+4. Run the `Pixie.py` script:
 
    ```bash
-   python PIXEL.py
+   python Pixie.py
    ```
 
 ## Dependencies 📦
@@ -55,7 +55,7 @@ To get started with Pixel Voice Assistant, follow the installation steps below:
 
 ## Usage 💡
 
-1. When you run the `PIXEL.py` script, Pixel Voice Assistant will greet you and wait for your voice commands.
+1. When you run the `Pixie.py` script, Pixel Voice Assistant will greet you and wait for your voice commands.
 
 2. You can issue commands or questions, and Pixel Voice Assistant will respond accordingly.
 
