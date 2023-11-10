@@ -1,4 +1,4 @@
-# 🎙️ Pixie: Python Voice Assistant
+# Pixie: Python Voice Assistant 🎙️
 
 Pixie Voice Assistant is a Python-based voice assistant that allows you to interact with your computer using voice commands. You can ask for the time, search the web, get information from Wikipedia, open websites, and more.
 
@@ -73,10 +73,11 @@ Pixel Voice Assistant supports a variety of voice commands, including but not li
 
 Feel free to extend the list of supported commands to suit your needs.
 
+## Contributing 🤝
+
+Thank you for considering contributing to Pixie Voice Assistant! Your contributions are valuable and help improve the project. Please take a moment to review the [contribution guidelines](CONTRIBUTING.md) before getting started.
+
 ## License 📜
 
 This project is licensed under the `MIT License` - see the [LICENSE](LICENSE) file for details.
 
----
-
-Feel free to modify and enhance the Pixel Voice Assistant to make it even more powerful and tailored to your preferences. Enjoy using your personal voice assistant! 🚀🎙️
