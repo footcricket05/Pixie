@@ -8,6 +8,7 @@ Pixie Voice Assistant is a Python-based voice assistant that allows you to inter
 - [Features](#features)
 - [Usage](#usage)
 - [Commands](#commands)
+- [Contributing](#contributing)
 - [License](#license)
 
 ## Getting Started 🚀
