@@ -40,33 +40,40 @@ try:
             speak("Good Afternoon !")
         else:
             speak("Good Evening !")
-        speak("Welcome, I am your personal voice assistant, Pixel")
+        speak("Welcome, I am your personal voice assistant, Pixie")
 
     def VoiceCommand():
         r = sr.Recognizer()
-        with sr.Microphone() as source:
-            print("Listening...")  # Print the "Listening..." message
-            r.pause_threshold = 1
-            audio = r.listen(source)
-        try:
-            print("Recognizing...")
-            query = r.recognize_google(audio, language='en-in')
-            print(f"User said: {query}\n")  # Print the user's voice input
-        except Exception as e:
-            print(e)
-            print("Unable to Recognize your voice.")
-            return "None"
-        return query
+
+        while True:
+            with sr.Microphone() as source:
+                print("Listening...")  # Print the "Listening..." message
+                r.pause_threshold = 1
+                audio = r.listen(source)
+
+            try:
+                print("Recognizing...")
+                query = r.recognize_google(audio, language='en-in')
+                print(f"User said: {query}\n")  # Print the user's voice input
+                return query.lower()  # Return the recognized command in lowercase
+            except sr.UnknownValueError:
+                print("Could not understand audio. Please try again.")
+            except sr.RequestError as e:
+                print(f"Could not request results from Google Speech Recognition service; {e}")
+                return "None"  # Return "None" to handle the error in the main loop
 
     if __name__ == '__main__':
         greet()
         while True:
             work = VoiceCommand()
-            if "Wikipedia" in work:
+            if work == "none":
+                continue  # Continue listening if the command is not recognized
+
+            if "wikipedia" in work:
                 speak("Searching Wikipedia...")
                 speak("Please specify the topic you want to search for.")
                 topic = VoiceCommand()
-                if topic != "None":
+                if topic != "none":
                     speak(f"Searching Wikipedia for {topic}...")
                     wiki_wiki = wikipediaapi.Wikipedia("en")
                     page = wiki_wiki.page(topic)
@@ -75,48 +82,43 @@ try:
                         speak(page.summary[:500])  # Speak the first 500 characters of the summary
                     else:
                         speak(f"Sorry, I couldn't find information about {topic} on Wikipedia.")
-            if 'hello' in work:
+                else:
+                    continue  # Continue listening for more commands if no specific topic is provided
+
+            # Add more conditions for other commands
+            elif 'hello' in work:
                 speak('Hi, how can I help you')
-
-            # Open links using Microsoft Edge
-            webbrowser.register('msedge', None, webbrowser.BackgroundBrowser(msedge_path), preferred=True)
-            web_browser = webbrowser.get('msedge')  # Register and get Microsoft Edge
-
-            if 'open YouTube' in work:
+            elif 'open youtube' in work:
                 speak("Here you go to YouTube")
-                web_browser.open_new_tab("https://www.youtube.com/")
-
-            if 'open Google' in work:
+                print("Here you go to YouTube")
+                webbrowser.open_new_tab("https://www.youtube.com/")
+            elif 'open google' in work:
                 speak("Here you go to Google")
-                web_browser.open_new_tab("https://www.google.com/")
-
-            if 'play music' in work:
+                print("Here you go to Google")
+                webbrowser.open_new_tab("https://www.google.com/")
+            elif 'play music' in work:
                 speak('Opening music player....')
-                web_browser.open_new_tab("https://music.youtube.com/")
-
-            if 'open Gmail' in work:
+                print('Opening music player....')
+                webbrowser.open_new_tab("https://music.youtube.com/")
+            elif 'open gmail' in work:
                 speak("Here you go to Gmail")
-                web_browser.open_new_tab("https://mail.google.com")
-
-            if 'open WhatsApp' in work:
+                print("Here you go to Gmail")
+                webbrowser.open_new_tab("https://mail.google.com")
+            elif 'open whatsapp' in work:
                 speak("Opening WhatsApp for you")
-                web_browser.open_new_tab("https://web.whatsapp.com/")
-
-            if 'exit' in work or 'bye' in work:
+                print("Opening WhatsApp for you")
+                webbrowser.open_new_tab("https://web.whatsapp.com/")
+            elif 'exit' in work or 'bye' in work:
                 speak("Thanks for giving me your time... have a nice day!")
+                speak("Thanks for giving me your time 😊")
                 exit()
 
+            # Continue listening for more commands
 except BaseException as ex:
     print(f"Error occurred = {ex}")
 
 finally:
     print("Thank you... Bye, have a nice day")
-
-
-# In[ ]:
-
-
-
 
 
 # In[ ]:
