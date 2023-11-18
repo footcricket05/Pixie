@@ -62,9 +62,9 @@ To get started with Pixel Voice Assistant, follow the installation steps below:
 
 3. To exit the assistant, simply say "exit" or "bye," and it will bid you farewell.
 
-## Commands 🗣️
+## Supported Commands 🗣️
 
-Pixel Voice Assistant supports a variety of voice commands, including but not limited to:
+Pixie Voice Assistant supports various voice commands, including but not limited to:
 
 - Asking for the time and date ⏰📅
 - Searching Google 🔍
@@ -81,4 +81,3 @@ Thank you for considering contributing to Pixie Voice Assistant! Your contributi
 ## License 📜
 
 This project is licensed under the `MIT License` - see the [LICENSE](LICENSE) file for details.
-
